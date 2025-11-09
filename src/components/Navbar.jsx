@@ -9,17 +9,17 @@ export default function Navbar() {
 
   const toggleMenu = () => setOpen(!open);
 
-  // 📱 Detect screen size
+
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1024); // lg breakpoint
+      setIsMobile(window.innerWidth < 1024); 
     };
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // 🧭 Smooth scroll to JSX section (by id)
+
   const scrollToSection = (id) => {
     const element = document.querySelector(id);
     if (element) {
@@ -31,7 +31,7 @@ export default function Navbar() {
   return (
     <nav className="w-full fixed top-0 left-0 z-[100] bg-transparent text-[#000000]">
       <div className="flex justify-end items-center px-8 py-4 relative">
-        {/* 🔹 Hamburger Icon */}
+      
         <button
           onClick={toggleMenu}
           className="relative z-[102] w-[50px] h-[50px] flex justify-center items-center cursor-pointer"
@@ -43,7 +43,6 @@ export default function Navbar() {
           />
         </button>
 
-        {/* 🔹 Desktop Links (slide in from right when open) */}
         {!isMobile && (
           <ul
             className={`flex flex-row items-center space-x-8 text-[18px] font-instrument font-normal absolute right-[120px] top-1/2 -translate-y-1/2 transition-all duration-700 ease-in-out ${
@@ -87,14 +86,14 @@ export default function Navbar() {
         )}
       </div>
 
-      {/* 🔹 Mobile Popup Menu */}
+      
       {isMobile && (
         <div
           className={`fixed top-0 right-0 h-full w-[70%] sm:w-[55%] bg-white shadow-2xl transform transition-transform duration-500 ease-in-out z-[101] flex flex-col justify-start items-center pt-24 space-y-8 text-[20px] font-instrument ${
             open ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          {/* ✖ Close Button */}
+         
           <button
             onClick={toggleMenu}
             className="absolute top-6 right-6 text-[#F15D2B] text-3xl font-bold focus:outline-none"
@@ -102,7 +101,7 @@ export default function Navbar() {
             
           </button>
 
-          {/* Navigation Links (slide in one-by-one) */}
+         
           <ul className="flex flex-col space-y-8 text-center animate-slideIn">
             <li
               onClick={() => scrollToSection("#services")}
@@ -139,7 +138,7 @@ export default function Navbar() {
         </div>
       )}
 
-      {/* 🔹 Overlay for Mobile */}
+     
       {isMobile && open && (
         <div
           onClick={toggleMenu}

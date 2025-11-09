@@ -24,24 +24,24 @@ const scrollToSection = (id) => {
       className="relative w-full min-h-screen overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${BG})` }}
     >
-      {/* 🔹 Fixed Navbar */}
+      
       <header className="fixed top-0 left-0 w-full flex justify-between items-center px-6 sm:px-8 py-4 z-[100] bg-transparent">
         {/* <img src={logo} alt="VFilms Logo" className="w-[80px] sm:w-[100px] object-contain" /> */}
         <Navbar />
       </header>
 
-      {/* 🔸 Main Content */}
+      {/* Main Content */}
       <section id="aboutTeam" className="pt-[120px] px-6 sm:px-[40px] md:px-[80px] flex flex-col md:flex-row gap-12 md:gap-20 justify-between items-start relative">
         {/* LEFT SECTION */}
         <div className="relative flex flex-col items-center md:items-start w-full md:w-1/2">
-          {/* 📌 Pin */}
+         
           <img
             src={about_pin}
             alt="Pin"
             className="absolute top-[-40px] right-[20px] md:top-[-70px] md:right-[130px] w-[30px] md:w-[40px] z-20 rotate-[5deg]"
           />
 
-          {/* 📄 Paper */}
+        
           <div className="relative w-[90%] sm:w-[450px] md:w-[530px] h-auto md:h-[410px] rotate-[-10.19deg] drop-shadow-md">
             <img
               src={about_topLeft}
@@ -61,7 +61,7 @@ const scrollToSection = (id) => {
             </div>
           </div>
 
-          {/* ⬇️ Bottom Image */}
+      
           <img
             src={about_bottom}
             alt="About Bottom"
@@ -71,7 +71,7 @@ const scrollToSection = (id) => {
 
         {/* RIGHT SECTION */}
         <div className="relative flex flex-col flex-grow items-center md:items-end w-full md:w-1/2 mt-10 md:mt-0">
-          {/* 👥 People Image */}
+      
           <div className="relative w-full top-0 md:top-40">
             <img
               src={about_people}
@@ -79,7 +79,7 @@ const scrollToSection = (id) => {
               className="w-full h-auto md:h-[350px] rounded-lg"
             />
 
-            {/* 🎯 Arrow Labels */}
+          
             <div className="absolute -top-[80px] sm:-top-[100px] left-[20%] flex flex-col items-center">
               <span className="text-[#103255] font-island text-[25px] sm:text-[35px] md:text-[45px] font-normal mt-1">
                 Film Makers
@@ -102,7 +102,7 @@ const scrollToSection = (id) => {
             </div>
           </div>
 
-          {/* ✨ Bottom Text + Button */}
+        
           <div className="mt-[200px] md:mt-[270px] text-center">
             <p className="text-[#0F3255] font-halant font-normal text-[20px] sm:text-[25px] md:text-[30px] mb-6">
               Take a closer look at the stories V bring to life.

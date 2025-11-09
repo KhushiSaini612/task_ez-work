@@ -7,7 +7,6 @@ export default {
   theme: {
     extend: {
         fontFamily: {
-          // Use the font family name without extra quotes so Tailwind emits a proper font-family rule
           island: ['Island Moments', 'cursive', 'sans-serif'],
           halant: ['Halant', 'serif', 'sans-serif'],
           instrument: ['Instrument Sans', 'sans-serif'],

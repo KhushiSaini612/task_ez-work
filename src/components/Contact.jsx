@@ -65,7 +65,7 @@ export default function Contact() {
       className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat overflow-hidden"
       style={{ backgroundImage: `url(${BG})` }}
     >
-      {/* 🔹 Header */}
+   
       <header className="fixed top-0 left-0 w-full flex justify-between items-center px-6 md:px-10 py-4 z-[100] bg-transparent">
         {/* <img
           src={logo}
@@ -75,7 +75,7 @@ export default function Contact() {
         <Navbar />
       </header>
 
-      {/* 🔸 Decorative Images */}
+     
       <img
         src={footer_left}
         alt="Footer Decoration"
@@ -87,12 +87,12 @@ export default function Contact() {
         className="absolute top-0 right-0 w-[200px] md:w-[300px] lg:w-[450px] h-auto object-contain z-0"
       />
 
-      {/* 🔸 Main Section */}
+      {/* Main Section */}
       <section
         id="contact"
         className="relative flex flex-col lg:flex-row justify-between items-stretch w-full min-h-screen z-10"
       >
-        {/* LEFT SIDE (40%) */}
+        {/* LEFT SIDE  */}
         <div className="w-full lg:w-[40%] flex justify-center items-center text-center lg:text-left px-6 md:px-12 py-20 lg:py-0">
           <p className="text-[#000000] font-instrument text-[18px] md:text-[20px] leading-relaxed max-w-[500px]">
             Whether you have an idea, a question, or simply want to explore how
@@ -104,10 +104,10 @@ export default function Contact() {
           </p>
         </div>
 
-        {/* RIGHT SIDE (60%) */}
+        {/* RIGHT SIDE */}
         <div className="w-full lg:w-[60%] flex flex-col justify-center items-center px-6 md:px-10 py-16">
           <div className="w-full max-w-[600px] text-center">
-            {/* Title & Subtitle */}
+          
             <h2 className="text-[#252729] font-halant text-[28px] md:text-[40px] mb-2">
               Join the Story
             </h2>
@@ -115,7 +115,7 @@ export default function Contact() {
               Ready to bring your vision to life? Let’s talk.
             </p>
 
-            {/* Contact Form */}
+       
             <form
               onSubmit={handleSubmit}
               className="flex flex-col space-y-5 w-full"
@@ -162,7 +162,7 @@ export default function Contact() {
                 className="bg-[#FFFFFF] px-4 py-3 rounded-[8px] text-[#757575] font-instrument focus:outline-none resize-none"
               ></textarea>
 
-              {/* Submit Button */}
+             
               <button
                 type="submit"
                 disabled={loading}
@@ -176,7 +176,7 @@ export default function Contact() {
               </button>
             </form>
 
-            {/* Contact Info */}
+        
             <div className="flex justify-center items-center flex-wrap gap-3 text-[#F15D2B] font-halant font-bold text-[14px] md:text-[16px] mt-6">
               <span>vernita@varnanfilms.co.in</span>
               <span>|</span>
